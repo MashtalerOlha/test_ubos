@@ -14,10 +14,6 @@
             {
                 "_id": "Recruit",
                 "isDefault": false
-            },
-            {
-                "_id": "Page1",
-                "isDefault": false
             }
         ],
         "createdAt": "2022-09-23T10:34:19.318Z",
@@ -30,10 +26,6 @@
             },
             {
                 "_id": "Recruit",
-                "isDefault": false
-            },
-            {
-                "_id": "Page1",
                 "isDefault": false
             }
         ],
@@ -414,7 +406,7 @@
             "remoteUrl": "git@github.com:MashtalerOlha/test_ubos.git",
             "repoName": "test_ubos"
         },
-        "lastDeployedAt": "2022-09-25T10:31:34.002Z",
+        "lastDeployedAt": "2022-09-25T10:34:52.144Z",
         "pages_info": [
             {
                 "_id": "632d8bab8068981100000003",
@@ -6330,7 +6322,7 @@
                                                 "type": "CANVAS_WIDGET",
                                                 "hideCard": true,
                                                 "displayName": "Canvas",
-                                                "key": "wnmtst0hdj",
+                                                "key": "g2399ynfuj",
                                                 "containerStyle": "none",
                                                 "canExtend": false,
                                                 "children": [
@@ -6359,9 +6351,6 @@
                                                             },
                                                             {
                                                                 "key": "primaryColumns.action.computedValue"
-                                                            },
-                                                            {
-                                                                "key": "tableData"
                                                             }
                                                         ],
                                                         "primaryColumns": {
@@ -6445,7 +6434,26 @@
                                                             }
                                                         },
                                                         "derivedColumns": {},
-                                                        "tableData": "{{CompanyJobsAPI.data}}",
+                                                        "tableData": [
+                                                            {
+                                                                "step": "#1",
+                                                                "task": "Drop a table",
+                                                                "status": "✅",
+                                                                "action": ""
+                                                            },
+                                                            {
+                                                                "step": "#2",
+                                                                "task": "Create a query fetch_users with the Mock DB",
+                                                                "status": "--",
+                                                                "action": ""
+                                                            },
+                                                            {
+                                                                "step": "#3",
+                                                                "task": "Bind the query using => fetch_users.data",
+                                                                "status": "--",
+                                                                "action": ""
+                                                            }
+                                                        ],
                                                         "columnSizeMap": {
                                                             "task": 245,
                                                             "step": 62,
@@ -6468,23 +6476,22 @@
                                                         "type": "TABLE_WIDGET",
                                                         "hideCard": false,
                                                         "displayName": "Table",
-                                                        "key": "t6mav1uwa7",
+                                                        "key": "v4e9sffipu",
                                                         "iconSVG": "/static/media/icon.db8a9cbd.svg",
-                                                        "widgetId": "2xntl0vu9d",
+                                                        "widgetId": "js7jkpt3hm",
                                                         "renderMode": "CANVAS",
                                                         "isLoading": false,
-                                                        "parentColumnSpace": 13.4208984375,
+                                                        "parentColumnSpace": 11.1787109375,
                                                         "parentRowSpace": 10,
-                                                        "leftColumn": 2,
-                                                        "rightColumn": 56,
-                                                        "topRow": 3,
-                                                        "bottomRow": 37,
-                                                        "parentId": "ubiqq47y2k",
-                                                        "dynamicTriggerPathList": []
+                                                        "leftColumn": 5,
+                                                        "rightColumn": 39,
+                                                        "topRow": 4,
+                                                        "bottomRow": 32,
+                                                        "parentId": "wfj40ud1cv"
                                                     }
                                                 ],
                                                 "minHeight": 400,
-                                                "widgetId": "ubiqq47y2k",
+                                                "widgetId": "wfj40ud1cv",
                                                 "renderMode": "CANVAS",
                                                 "isLoading": false,
                                                 "parentColumnSpace": 1,
@@ -6492,8 +6499,8 @@
                                                 "leftColumn": 0,
                                                 "rightColumn": 430.5,
                                                 "topRow": 0,
-                                                "bottomRow": 390,
-                                                "parentId": "u04mkp0x5k"
+                                                "bottomRow": 400,
+                                                "parentId": "18dwodzw1t"
                                             }
                                         ],
                                         "version": 1,
@@ -6501,18 +6508,18 @@
                                         "type": "CONTAINER_WIDGET",
                                         "hideCard": false,
                                         "displayName": "Container",
-                                        "key": "whrogk4ask",
+                                        "key": "kj9blynii2",
                                         "iconSVG": "/static/media/icon.1977dca3.svg",
                                         "isCanvas": true,
-                                        "widgetId": "u04mkp0x5k",
+                                        "widgetId": "18dwodzw1t",
                                         "renderMode": "CANVAS",
                                         "isLoading": false,
                                         "parentColumnSpace": 17.9375,
                                         "parentRowSpace": 10,
-                                        "leftColumn": 1,
-                                        "rightColumn": 50,
-                                        "topRow": 2,
-                                        "bottomRow": 48,
+                                        "leftColumn": 3,
+                                        "rightColumn": 44,
+                                        "topRow": 5,
+                                        "bottomRow": 53,
                                         "parentId": "0"
                                     }
                                 ],
@@ -8410,6 +8417,141 @@
                                                     {
                                                         "isVisible": true,
                                                         "animateLoading": true,
+                                                        "text": "Delete",
+                                                        "buttonColor": "#DD4B34",
+                                                        "buttonVariant": "PRIMARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "ButtonDelete",
+                                                        "isDisabled": "{{!TableCompanyJobs.selectedRow._id}}",
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "widgetId": "gtcapsxvv8",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 14.037109375,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 49,
+                                                        "rightColumn": 64,
+                                                        "topRow": 13,
+                                                        "bottomRow": 18,
+                                                        "parentId": "9qbyrvj36y",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "isDisabled"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "iconName": "delete",
+                                                        "iconAlign": "left",
+                                                        "borderRadius": "ROUNDED",
+                                                        "dynamicPropertyPathList": [
+                                                            {
+                                                                "key": "isDisabled"
+                                                            }
+                                                        ],
+                                                        "onClick": "{{ApiDeleteJob.run(() => APIGetJobs.run(), () => {})}}"
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Create Job",
+                                                        "buttonColor": "#03B365",
+                                                        "buttonVariant": "PRIMARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "ButtonCreate",
+                                                        "isDisabled": false,
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "widgetId": "xn0bgzm6lb",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 14.037109375,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 0,
+                                                        "rightColumn": 15,
+                                                        "topRow": 13,
+                                                        "bottomRow": 18,
+                                                        "parentId": "9qbyrvj36y",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "iconName": "add",
+                                                        "iconAlign": "left",
+                                                        "borderRadius": "ROUNDED",
+                                                        "onClick": "{{showModal('ModalCreateJob')}}"
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Edit Job Info",
+                                                        "buttonColor": "#3366FF",
+                                                        "buttonVariant": "PRIMARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "ButtoneEdit",
+                                                        "isDisabled": "{{!TableCompanyJobs.selectedRow._id}}",
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "widgetId": "ig6u46j8tp",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 14.037109375,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 16,
+                                                        "rightColumn": 31,
+                                                        "topRow": 13,
+                                                        "bottomRow": 18,
+                                                        "parentId": "9qbyrvj36y",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "isDisabled"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "iconName": "edit",
+                                                        "iconAlign": "left",
+                                                        "borderRadius": "ROUNDED",
+                                                        "onClick": "{{showModal('UpdateJobModal')}}",
+                                                        "dynamicPropertyPathList": [
+                                                            {
+                                                                "key": "isDisabled"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
                                                         "defaultSelectedRow": "",
                                                         "label": "Data",
                                                         "widgetName": "TableCompanyJobs",
@@ -8421,9 +8563,6 @@
                                                         "defaultPageSize": 0,
                                                         "isShowLoading": true,
                                                         "dynamicBindingPathList": [
-                                                            {
-                                                                "key": "tableData"
-                                                            },
                                                             {
                                                                 "key": "primaryColumns._id.computedValue"
                                                             },
@@ -8459,6 +8598,18 @@
                                                             },
                                                             {
                                                                 "key": "primaryColumns.deleted.computedValue"
+                                                            },
+                                                            {
+                                                                "key": "derivedColumns.customColumn1.computedValue"
+                                                            },
+                                                            {
+                                                                "key": "derivedColumns.customColumn1.buttonLabel"
+                                                            },
+                                                            {
+                                                                "key": "primaryColumns.customColumn1.buttonLabel"
+                                                            },
+                                                            {
+                                                                "key": "tableData"
                                                             }
                                                         ],
                                                         "primaryColumns": {
@@ -8477,7 +8628,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "_id",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow._id))}}"
                                                             },
                                                             "jobTitle": {
                                                                 "index": 1,
@@ -8494,7 +8645,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "jobTitle",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.jobTitle))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.jobTitle))}}"
                                                             },
                                                             "department": {
                                                                 "index": 2,
@@ -8511,7 +8662,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "department",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.department))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.department))}}"
                                                             },
                                                             "jobType": {
                                                                 "index": 3,
@@ -8528,7 +8679,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "jobType",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.jobType))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.jobType))}}"
                                                             },
                                                             "skills": {
                                                                 "index": 4,
@@ -8545,7 +8696,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "skills",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.skills))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.skills))}}"
                                                             },
                                                             "experience": {
                                                                 "index": 5,
@@ -8562,7 +8713,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "experience",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.experience))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.experience))}}"
                                                             },
                                                             "mminSalary": {
                                                                 "index": 6,
@@ -8579,7 +8730,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "mminSalary",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.mminSalary))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.mminSalary))}}"
                                                             },
                                                             "maxSalary": {
                                                                 "index": 7,
@@ -8596,7 +8747,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "maxSalary",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.maxSalary))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.maxSalary))}}"
                                                             },
                                                             "currency": {
                                                                 "index": 8,
@@ -8613,7 +8764,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "currency",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.currency))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.currency))}}"
                                                             },
                                                             "description": {
                                                                 "index": 9,
@@ -8630,7 +8781,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "description",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.description))}}"
                                                             },
                                                             "company": {
                                                                 "index": 10,
@@ -8647,7 +8798,7 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "company",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.company))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.company))}}"
                                                             },
                                                             "deleted": {
                                                                 "index": 11,
@@ -8664,10 +8815,53 @@
                                                                 "isCellVisible": true,
                                                                 "isDerived": false,
                                                                 "label": "deleted",
-                                                                "computedValue": "{{TableCompanyJobs.sanitizedTableData.map((currentRow) => ( currentRow.deleted))}}"
+                                                                "computedValue": "{{TableJobs.sanitizedTableData.map((currentRow) => ( currentRow.deleted))}}"
+                                                            },
+                                                            "customColumn1": {
+                                                                "index": 12,
+                                                                "width": 150,
+                                                                "id": "customColumn1",
+                                                                "columnType": "button",
+                                                                "enableFilter": true,
+                                                                "enableSort": true,
+                                                                "isVisible": true,
+                                                                "isDisabled": false,
+                                                                "isCellVisible": true,
+                                                                "isDerived": true,
+                                                                "label": "edit",
+                                                                "computedValue": "",
+                                                                "buttonStyle": "rgb(3, 179, 101)",
+                                                                "buttonColor": "#03B365",
+                                                                "menuColor": "#03B365",
+                                                                "labelColor": "#FFFFFF",
+                                                                "iconName": "",
+                                                                "buttonLabel": "{{TableJobs.sanitizedTableData.map((currentRow) => ( 'Actoin'))}}",
+                                                                "onClick": ""
                                                             }
                                                         },
-                                                        "derivedColumns": {},
+                                                        "derivedColumns": {
+                                                            "customColumn1": {
+                                                                "index": 12,
+                                                                "width": 150,
+                                                                "id": "customColumn1",
+                                                                "columnType": "button",
+                                                                "enableFilter": true,
+                                                                "enableSort": true,
+                                                                "isVisible": true,
+                                                                "isDisabled": false,
+                                                                "isCellVisible": true,
+                                                                "isDerived": true,
+                                                                "label": "edit",
+                                                                "computedValue": "",
+                                                                "buttonStyle": "rgb(3, 179, 101)",
+                                                                "buttonColor": "#03B365",
+                                                                "menuColor": "#03B365",
+                                                                "labelColor": "#FFFFFF",
+                                                                "iconName": "",
+                                                                "buttonLabel": "{{TableJobs.sanitizedTableData.map((currentRow) => ( 'Actoin'))}}",
+                                                                "onClick": ""
+                                                            }
+                                                        },
                                                         "tableData": "{{APIGetCompanyJobs.data}}",
                                                         "columnSizeMap": {
                                                             "task": 245,
@@ -8688,7 +8882,8 @@
                                                             "currency",
                                                             "description",
                                                             "company",
-                                                            "deleted"
+                                                            "deleted",
+                                                            "customColumn1"
                                                         ],
                                                         "enableClientSideSearch": false,
                                                         "isVisibleSearch": true,
@@ -8713,7 +8908,11 @@
                                                         "topRow": 19,
                                                         "bottomRow": 60,
                                                         "parentId": "9qbyrvj36y",
-                                                        "dynamicTriggerPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "primaryColumns.customColumn1.onClick"
+                                                            }
+                                                        ],
                                                         "dynamicPropertyPathList": [],
                                                         "compactMode": "SHORT"
                                                     }
@@ -8749,6 +8948,1139 @@
                                         "topRow": 1,
                                         "bottomRow": 50,
                                         "parentId": "0"
+                                    },
+                                    {
+                                        "width": 758,
+                                        "height": 710,
+                                        "canEscapeKeyClose": true,
+                                        "animateLoading": true,
+                                        "detachFromLayout": true,
+                                        "canOutsideClickClose": true,
+                                        "shouldScrollContents": true,
+                                        "widgetName": "ModalCreateJob",
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "widgetName": "Canvas2",
+                                                "version": 1,
+                                                "detachFromLayout": true,
+                                                "type": "CANVAS_WIDGET",
+                                                "hideCard": true,
+                                                "displayName": "Canvas",
+                                                "key": "e496gg1khz",
+                                                "canExtend": true,
+                                                "isDisabled": false,
+                                                "shouldScrollContents": false,
+                                                "children": [
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Company",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "{{APIGetCompanyName.data.map(e=>{\n\treturn{\n\t\t\"label\": e.companyName,\n\t\t\"value\": e._id\n\t}\n})}}",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputCompany",
+                                                        "defaultOptionValue": "",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "tnr9l47al9",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 49,
+                                                        "bottomRow": 53,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "options"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Currency",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"$\",\n    \"value\": \"$\"\n  },\n  {\n    \"label\": \"€\",\n    \"value\": \"€\"\n  },\n  {\n    \"label\": \"zł\",\n    \"value\": \"zł\"\n  },\n\t  {\n    \"label\": \"£\",\n    \"value\": \"£\"\n  },\n\t{\n\t\"label\": \"₴\",\n\t\"value\": \"₴\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputCurrency",
+                                                        "defaultOptionValue": "",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "hdf6e33b19",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 44,
+                                                        "bottomRow": 48,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Experience",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"no experience\",\n    \"value\": \"no experience\"\n  },\n  {\n    \"label\": \"1 - 3 years\",\n    \"value\": \"1 - 3 years\"\n  },\n\t{\n\t    \"label\": \"+3 years\",\n    \"value\": \"+3 years\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputExperience",
+                                                        "defaultOptionValue": "",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "0yke9xgl0e",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 29,
+                                                        "bottomRow": 33,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "",
+                                                        "labelText": "JobType",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"development\",\n    \"value\": \"development\"\n  },\n  {\n    \"label\": \"non-technical\",\n    \"value\": \"non-technical\"\n  }\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputJobType",
+                                                        "defaultOptionValue": "",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "qec8fja801",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 19,
+                                                        "bottomRow": 23,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Description",
+                                                        "labelPosition": "Top",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputDescription",
+                                                        "version": 2,
+                                                        "defaultText": "",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "r8pcgaca0q",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 54,
+                                                        "bottomRow": 70,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Max Salary",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputMaxSalary",
+                                                        "version": 2,
+                                                        "defaultText": "",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "z9zwcvdxry",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 39,
+                                                        "bottomRow": 43,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Min Salary",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputMinSalary",
+                                                        "version": 2,
+                                                        "defaultText": "",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "b1b8npqizr",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 34,
+                                                        "bottomRow": 38,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Skills",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputSkills",
+                                                        "version": 2,
+                                                        "defaultText": "",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "yrmq5qixv9",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 24,
+                                                        "bottomRow": 28,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "iconName": "cross",
+                                                        "borderRadius": "SHARP",
+                                                        "boxShadow": "NONE",
+                                                        "buttonColor": "#2E3D49",
+                                                        "buttonVariant": "TERTIARY",
+                                                        "isDisabled": false,
+                                                        "widgetName": "IconButtonClose",
+                                                        "version": 1,
+                                                        "animateLoading": true,
+                                                        "type": "ICON_BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Icon Button",
+                                                        "key": "icphuk25aj",
+                                                        "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                        "iconSize": 24,
+                                                        "widgetId": "9wqjzu5zr7",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 56,
+                                                        "rightColumn": 64,
+                                                        "topRow": 1,
+                                                        "bottomRow": 5,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "onClick": "{{closeModal('ModalCreateJob')}}",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "text": "What's the job you're hiring on?",
+                                                        "fontSize": "HEADING1",
+                                                        "fontStyle": "BOLD",
+                                                        "textAlign": "LEFT",
+                                                        "textColor": "#231F20",
+                                                        "truncateButtonColor": "#FFC13D",
+                                                        "widgetName": "ModalTitle",
+                                                        "shouldTruncate": false,
+                                                        "overflow": "NONE",
+                                                        "version": 1,
+                                                        "animateLoading": true,
+                                                        "type": "TEXT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Text",
+                                                        "key": "e95wcjur3w",
+                                                        "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                        "widgetId": "1k00hr4ghy",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 21,
+                                                        "rightColumn": 41,
+                                                        "topRow": 0,
+                                                        "bottomRow": 8,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Close",
+                                                        "buttonColor": "#03B365",
+                                                        "buttonVariant": "SECONDARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "ButtonCloseModalCreate",
+                                                        "isDisabled": false,
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "buttonStyle": "PRIMARY",
+                                                        "widgetId": "ss0b56mywg",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 14,
+                                                        "topRow": 72,
+                                                        "bottomRow": 76,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "onClick": "{{closeModal('ModalCreateJob')}}",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Create",
+                                                        "buttonColor": "#03B365",
+                                                        "buttonVariant": "PRIMARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "ButtonCreateModal",
+                                                        "isDisabled": false,
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "buttonStyle": "PRIMARY_BUTTON",
+                                                        "widgetId": "iluwbg76ai",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 50,
+                                                        "rightColumn": 62,
+                                                        "topRow": 72,
+                                                        "bottomRow": 76,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "onClick": "{{APICreateJob.run(() => {\n\tAPIGetJobs.run();\n\tcloseModal(\"ModalCreateJob\")\n}, () => {})}}",
+                                                        "dynamicPropertyPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Job title",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputJobTitle",
+                                                        "version": 2,
+                                                        "defaultText": "",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "sjpdcbf1pc",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 9,
+                                                        "bottomRow": 13,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Department",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"engineering\",\n    \"value\": \"engineering \"\n  },\n  {\n    \"label\": \"marketing\",\n    \"value\": \"marketing\"\n  },\n\t{\n\t\"label\": \"financial\",\n\t\"value\": \"financial\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputDepartment",
+                                                        "defaultOptionValue": "",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "ht3ivg728q",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 14,
+                                                        "bottomRow": 18,
+                                                        "parentId": "rib4q9j5mx",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    }
+                                                ],
+                                                "minHeight": 710,
+                                                "widgetId": "rib4q9j5mx",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 1,
+                                                "parentRowSpace": 1,
+                                                "leftColumn": 0,
+                                                "rightColumn": 0,
+                                                "topRow": 0,
+                                                "bottomRow": 780,
+                                                "parentId": "qc3lvwriin"
+                                            }
+                                        ],
+                                        "version": 2,
+                                        "type": "MODAL_WIDGET",
+                                        "hideCard": false,
+                                        "displayName": "Modal",
+                                        "key": "5dmg2832jv",
+                                        "iconSVG": "/static/media/icon.4975978e.svg",
+                                        "isCanvas": true,
+                                        "widgetId": "qc3lvwriin",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "parentColumnSpace": 1,
+                                        "parentRowSpace": 1,
+                                        "leftColumn": 0,
+                                        "rightColumn": 0,
+                                        "topRow": 0,
+                                        "bottomRow": 0,
+                                        "parentId": "0"
+                                    },
+                                    {
+                                        "width": 922,
+                                        "height": 502,
+                                        "canEscapeKeyClose": true,
+                                        "animateLoading": true,
+                                        "detachFromLayout": true,
+                                        "canOutsideClickClose": true,
+                                        "shouldScrollContents": true,
+                                        "widgetName": "UpdateJobModal",
+                                        "children": [
+                                            {
+                                                "isVisible": true,
+                                                "widgetName": "Canvas3",
+                                                "version": 1,
+                                                "detachFromLayout": true,
+                                                "type": "CANVAS_WIDGET",
+                                                "hideCard": true,
+                                                "displayName": "Canvas",
+                                                "key": "hyms7enu9x",
+                                                "canExtend": true,
+                                                "isDisabled": false,
+                                                "shouldScrollContents": false,
+                                                "children": [
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Job title",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputJobTitleUpd",
+                                                        "version": 2,
+                                                        "defaultText": "{{TableCompanyJobs.selectedRow.jobTitle}}",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "f6pe44h2st",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 10,
+                                                        "bottomRow": 14,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultText"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Department",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"engineering\",\n    \"value\": \"engineering \"\n  },\n  {\n    \"label\": \"marketing\",\n    \"value\": \"marketing\"\n  },\n\t{\n\t\"label\": \"financial\",\n\t\"value\": \"financial\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputDepartmentUpd",
+                                                        "defaultOptionValue": "{{TableCompanyJobs.selectedRow.department}}",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "f3swzfdrxa",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 15,
+                                                        "bottomRow": 19,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultOptionValue"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "",
+                                                        "labelText": "JobType",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"development\",\n    \"value\": \"development\"\n  },\n  {\n    \"label\": \"non-technical\",\n    \"value\": \"non-technical\"\n  }\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputJobTypeUpd",
+                                                        "defaultOptionValue": "{{TableCompanyJobs.selectedRow.jobType}}",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "spaso5dt1o",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 20,
+                                                        "bottomRow": 24,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultOptionValue"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Skills",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputSkillsUpd",
+                                                        "version": 2,
+                                                        "defaultText": "{{TableCompanyJobs.selectedRow.skills}}",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "70ndv0pr7q",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 25,
+                                                        "bottomRow": 29,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultText"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Experience",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"no experience\",\n    \"value\": \"no experience\"\n  },\n  {\n    \"label\": \"1 - 3 years\",\n    \"value\": \"1 - 3 years\"\n  },\n\t{\n\t    \"label\": \"+3 years\",\n    \"value\": \"+3 years\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputExperienceUpd",
+                                                        "defaultOptionValue": "{{TableCompanyJobs.selectedRow.experience}}",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "vgfmumomgs",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 30,
+                                                        "bottomRow": 36,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultOptionValue"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Min Salary",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputMinSalaryUpd",
+                                                        "version": 2,
+                                                        "defaultText": "{{TableCompanyJobs.selectedRow.mminSalary}}",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "7g0vx1e7ke",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 37,
+                                                        "bottomRow": 41,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultText"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Max Salary",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputMaxSalaryUpd",
+                                                        "version": 2,
+                                                        "defaultText": "{{TableCompanyJobs.selectedRow.maxSalary}}",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "wiu5rla6vt",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 42,
+                                                        "bottomRow": 46,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultText"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Currency",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "[\n  {\n    \"label\": \"$\",\n    \"value\": \"$\"\n  },\n  {\n    \"label\": \"€\",\n    \"value\": \"€\"\n  },\n  {\n    \"label\": \"zł\",\n    \"value\": \"zł\"\n  },\n\t  {\n    \"label\": \"£\",\n    \"value\": \"£\"\n  },\n\t{\n\t\"label\": \"₴\",\n\t\"value\": \"₴\"\n\t}\n]",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputCurrencyUpd",
+                                                        "defaultOptionValue": "{{TableCompanyJobs.selectedRow.currency}}",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "xianhsodgr",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 47,
+                                                        "bottomRow": 51,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultOptionValue"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "placeholderText": "Select option",
+                                                        "labelText": "Company",
+                                                        "labelPosition": "Left",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "options": "{{APIGetCompanyName.data.map(e=>{\n\treturn{\n\t\t\"label\": e.companyName,\n\t\t\"value\": e._id\n\t}\n})}}",
+                                                        "serverSideFiltering": false,
+                                                        "widgetName": "inputCompanyUpd",
+                                                        "defaultOptionValue": "{{TableCompanyJobs.selectedRow.company}}",
+                                                        "version": 1,
+                                                        "isFilterable": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "type": "SELECT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Select",
+                                                        "key": "gaxloxrqp6",
+                                                        "iconSVG": "/static/media/icon.bd99caba.svg",
+                                                        "widgetId": "hn1meb0qw7",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 52,
+                                                        "bottomRow": 56,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "options"
+                                                            },
+                                                            {
+                                                                "key": "defaultOptionValue"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "label": "Description",
+                                                        "labelPosition": "Top",
+                                                        "labelAlignment": "left",
+                                                        "labelWidth": "10",
+                                                        "widgetName": "inputDescriptionUpd",
+                                                        "version": 2,
+                                                        "defaultText": "{{TableCompanyJobs.selectedRow.description}}",
+                                                        "iconAlign": "left",
+                                                        "autoFocus": false,
+                                                        "labelStyle": "",
+                                                        "resetOnSubmit": true,
+                                                        "isRequired": false,
+                                                        "isDisabled": false,
+                                                        "animateLoading": true,
+                                                        "classStyle": "",
+                                                        "inputType": "TEXT",
+                                                        "type": "INPUT_WIDGET_V2",
+                                                        "hideCard": false,
+                                                        "displayName": "Input",
+                                                        "key": "gmquvdduim",
+                                                        "iconSVG": "/static/media/icon.9f505595.svg",
+                                                        "widgetId": "ptwfw7bkdr",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "parentColumnSpace": 11.46875,
+                                                        "parentRowSpace": 10,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 62,
+                                                        "topRow": 57,
+                                                        "bottomRow": 73,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [
+                                                            {
+                                                                "key": "defaultText"
+                                                            }
+                                                        ],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Close",
+                                                        "buttonColor": "#03B365",
+                                                        "buttonVariant": "SECONDARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "BtnClose",
+                                                        "isDisabled": false,
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "buttonStyle": "PRIMARY",
+                                                        "widgetId": "gxxuj4988c",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 2,
+                                                        "rightColumn": 14,
+                                                        "topRow": 75,
+                                                        "bottomRow": 79,
+                                                        "parentId": "vxzlnemik5",
+                                                        "onClick": "{{closeModal('UpdateJobModal')}}",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "borderRadius": "ROUNDED"
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "animateLoading": true,
+                                                        "text": "Edit",
+                                                        "buttonColor": "#03B365",
+                                                        "buttonVariant": "PRIMARY",
+                                                        "placement": "CENTER",
+                                                        "widgetName": "UpdModalBtn",
+                                                        "isDisabled": false,
+                                                        "isDefaultClickDisabled": true,
+                                                        "recaptchaType": "V3",
+                                                        "version": 1,
+                                                        "classStyle": "",
+                                                        "type": "BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Button",
+                                                        "key": "1d01j5mfzy",
+                                                        "iconSVG": "/static/media/icon.cca02633.svg",
+                                                        "buttonStyle": "PRIMARY_BUTTON",
+                                                        "widgetId": "vmgz8f09gh",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 50,
+                                                        "rightColumn": 62,
+                                                        "topRow": 75,
+                                                        "bottomRow": 79,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ],
+                                                        "onClick": "{{APIPutJob.run(() => {\n\tAPIGetJobs.run();\n\tcloseModal(\"UpdateJobModal\")\n}, () => {})}}",
+                                                        "borderRadius": "ROUNDED",
+                                                        "dynamicPropertyPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "text": "What's the job you're hiring on?",
+                                                        "fontSize": "HEADING1",
+                                                        "fontStyle": "BOLD",
+                                                        "textAlign": "LEFT",
+                                                        "textColor": "#231F20",
+                                                        "truncateButtonColor": "#FFC13D",
+                                                        "widgetName": "ModalTitleCopy2",
+                                                        "shouldTruncate": false,
+                                                        "overflow": "NONE",
+                                                        "version": 1,
+                                                        "animateLoading": true,
+                                                        "type": "TEXT_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Text",
+                                                        "key": "e95wcjur3w",
+                                                        "iconSVG": "/static/media/icon.97c59b52.svg",
+                                                        "widgetId": "b5twuy75ns",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 22,
+                                                        "rightColumn": 42,
+                                                        "topRow": 0,
+                                                        "bottomRow": 8,
+                                                        "parentId": "vxzlnemik5",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": []
+                                                    },
+                                                    {
+                                                        "isVisible": true,
+                                                        "iconName": "cross",
+                                                        "borderRadius": "SHARP",
+                                                        "boxShadow": "NONE",
+                                                        "buttonColor": "#2E3D49",
+                                                        "buttonVariant": "TERTIARY",
+                                                        "isDisabled": false,
+                                                        "widgetName": "IconButton2",
+                                                        "version": 1,
+                                                        "animateLoading": true,
+                                                        "type": "ICON_BUTTON_WIDGET",
+                                                        "hideCard": false,
+                                                        "displayName": "Icon Button",
+                                                        "key": "9vfhboo5xm",
+                                                        "iconSVG": "/static/media/icon.1a0c634a.svg",
+                                                        "iconSize": 24,
+                                                        "widgetId": "nk7dq16euf",
+                                                        "renderMode": "CANVAS",
+                                                        "isLoading": false,
+                                                        "leftColumn": 56,
+                                                        "rightColumn": 64,
+                                                        "topRow": 1,
+                                                        "bottomRow": 5,
+                                                        "parentId": "vxzlnemik5",
+                                                        "onClick": "{{closeModal('UpdateJobModal')}}",
+                                                        "dynamicBindingPathList": [],
+                                                        "dynamicTriggerPathList": [
+                                                            {
+                                                                "key": "onClick"
+                                                            }
+                                                        ]
+                                                    }
+                                                ],
+                                                "minHeight": 502,
+                                                "widgetId": "vxzlnemik5",
+                                                "renderMode": "CANVAS",
+                                                "isLoading": false,
+                                                "parentColumnSpace": 1,
+                                                "parentRowSpace": 1,
+                                                "leftColumn": 0,
+                                                "rightColumn": 0,
+                                                "topRow": 0,
+                                                "bottomRow": 810,
+                                                "parentId": "favo6t81pv"
+                                            }
+                                        ],
+                                        "version": 2,
+                                        "type": "MODAL_WIDGET",
+                                        "hideCard": false,
+                                        "displayName": "Modal",
+                                        "key": "1voje0dkam",
+                                        "iconSVG": "/static/media/icon.4975978e.svg",
+                                        "isCanvas": true,
+                                        "widgetId": "favo6t81pv",
+                                        "renderMode": "CANVAS",
+                                        "isLoading": false,
+                                        "parentColumnSpace": 1,
+                                        "parentRowSpace": 1,
+                                        "leftColumn": 0,
+                                        "rightColumn": 0,
+                                        "topRow": 0,
+                                        "bottomRow": 0,
+                                        "parentId": "0"
                                     }
                                 ],
                                 "snapRows": 60,
@@ -8760,7 +10092,42 @@
                                 "MainContainer",
                                 "Container1",
                                 "Canvas1",
-                                "TableCompanyJobs"
+                                "ButtonDelete",
+                                "ButtonCreate",
+                                "ButtoneEdit",
+                                "TableCompanyJobs",
+                                "ModalCreateJob",
+                                "Canvas2",
+                                "inputCompany",
+                                "inputCurrency",
+                                "inputExperience",
+                                "inputJobType",
+                                "inputDescription",
+                                "inputMaxSalary",
+                                "inputMinSalary",
+                                "inputSkills",
+                                "IconButtonClose",
+                                "ModalTitle",
+                                "ButtonCloseModalCreate",
+                                "ButtonCreateModal",
+                                "inputJobTitle",
+                                "inputDepartment",
+                                "UpdateJobModal",
+                                "Canvas3",
+                                "inputJobTitleUpd",
+                                "inputDepartmentUpd",
+                                "inputJobTypeUpd",
+                                "inputSkillsUpd",
+                                "inputExperienceUpd",
+                                "inputMinSalaryUpd",
+                                "inputMaxSalaryUpd",
+                                "inputCurrencyUpd",
+                                "inputCompanyUpd",
+                                "inputDescriptionUpd",
+                                "BtnClose",
+                                "UpdModalBtn",
+                                "ModalTitleCopy2",
+                                "IconButton2"
                             ],
                             "deleted": false,
                             "policies": [],
@@ -12790,8 +14157,8 @@
                     ]
                 },
                 "createdAt": "2022-09-25T10:19:51.849Z",
-                "updatedAt": "2022-09-25T10:19:51.849Z",
-                "deleted": false,
+                "updatedAt": "2022-09-25T13:33:21.111Z",
+                "deleted": true,
                 "policies": [
                     {
                         "permission": "read:pages",
@@ -12842,7 +14209,68 @@
                             "policies": []
                         }
                     ]
-                }
+                },
+                "deletedAt": "2022-09-25T13:33:21.111Z"
+            },
+            {
+                "_id": "63302e89806898110000002b",
+                "applicationId": "company",
+                "slug": "Page1",
+                "unpublishedPage": {
+                    "name": "Page1",
+                    "layouts": [
+                        {
+                            "_id": "63302e89806898110000002c",
+                            "viewMode": false,
+                            "dsl": {
+                                "widgetName": "MainContainer",
+                                "backgroundColor": "none",
+                                "rightColumn": 1224,
+                                "snapColumns": 64,
+                                "widgetId": "0",
+                                "topRow": 0,
+                                "bottomRow": 600,
+                                "parentRowSpace": 1,
+                                "type": "CANVAS_WIDGET",
+                                "detachFromLayout": true,
+                                "minHeight": 610,
+                                "dynamicBindingPathList": [],
+                                "parentColumnSpace": 1,
+                                "leftColumn": 0,
+                                "children": [],
+                                "snapRows": 60,
+                                "containerStyle": "none",
+                                "canExtend": true,
+                                "version": 57
+                            },
+                            "widgetNames": [
+                                "MainContainer"
+                            ],
+                            "deleted": false,
+                            "policies": []
+                        }
+                    ]
+                },
+                "createdAt": "2022-09-25T10:33:45.305Z",
+                "updatedAt": "2022-09-25T13:33:54.212Z",
+                "deleted": true,
+                "policies": [
+                    {
+                        "permission": "read:pages",
+                        "groups": [],
+                        "users": [
+                            null
+                        ]
+                    },
+                    {
+                        "permission": "manage:pages",
+                        "groups": [],
+                        "users": [
+                            null
+                        ]
+                    }
+                ],
+                "deletedAt": "2022-09-25T13:33:54.212Z"
             }
         ],
         "action_info": [
