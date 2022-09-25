@@ -55,5 +55,40 @@
                 null
             ]
         }
-    ]
+    ],
+    "publishedPages": {
+        "name": "Page1",
+        "layouts": [
+            {
+                "_id": "63302b47806898110000002a",
+                "viewMode": false,
+                "dsl": {
+                    "widgetName": "MainContainer",
+                    "backgroundColor": "none",
+                    "rightColumn": 1224,
+                    "snapColumns": 64,
+                    "widgetId": "0",
+                    "topRow": 0,
+                    "bottomRow": 600,
+                    "parentRowSpace": 1,
+                    "type": "CANVAS_WIDGET",
+                    "detachFromLayout": true,
+                    "minHeight": 610,
+                    "dynamicBindingPathList": [],
+                    "parentColumnSpace": 1,
+                    "leftColumn": 0,
+                    "children": [],
+                    "snapRows": 60,
+                    "containerStyle": "none",
+                    "canExtend": true,
+                    "version": 57
+                },
+                "widgetNames": [
+                    "MainContainer"
+                ],
+                "deleted": false,
+                "policies": []
+            }
+        ]
+    }
 }

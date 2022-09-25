@@ -1,5 +1,5 @@
-[
-    {
+{
+    "0": {
         "_id": "632d8bab8068981100000002",
         "name": "company",
         "slug": "company",
@@ -16,7 +16,7 @@
                 "isDefault": false
             },
             {
-                "_id": "CompanyJobs",
+                "_id": "Page1",
                 "isDefault": false
             }
         ],
@@ -414,6 +414,7 @@
             "remoteUrl": "git@github.com:MashtalerOlha/test_ubos.git",
             "repoName": "test_ubos"
         },
+        "lastDeployedAt": "2022-09-25T10:31:34.002Z",
         "pages_info": [
             {
                 "_id": "632d8bab8068981100000003",
@@ -12806,7 +12807,42 @@
                             null
                         ]
                     }
-                ]
+                ],
+                "publishedPages": {
+                    "name": "Page1",
+                    "layouts": [
+                        {
+                            "_id": "63302b47806898110000002a",
+                            "viewMode": false,
+                            "dsl": {
+                                "widgetName": "MainContainer",
+                                "backgroundColor": "none",
+                                "rightColumn": 1224,
+                                "snapColumns": 64,
+                                "widgetId": "0",
+                                "topRow": 0,
+                                "bottomRow": 600,
+                                "parentRowSpace": 1,
+                                "type": "CANVAS_WIDGET",
+                                "detachFromLayout": true,
+                                "minHeight": 610,
+                                "dynamicBindingPathList": [],
+                                "parentColumnSpace": 1,
+                                "leftColumn": 0,
+                                "children": [],
+                                "snapRows": 60,
+                                "containerStyle": "none",
+                                "canExtend": true,
+                                "version": 57
+                            },
+                            "widgetNames": [
+                                "MainContainer"
+                            ],
+                            "deleted": false,
+                            "policies": []
+                        }
+                    ]
+                }
             }
         ],
         "action_info": [
@@ -14650,4 +14686,4 @@
         ],
         "colection_info": []
     }
-]
+}
