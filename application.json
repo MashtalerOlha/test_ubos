@@ -14,6 +14,10 @@
             {
                 "_id": "Recruit",
                 "isDefault": false
+            },
+            {
+                "_id": "CompanyJobs",
+                "isDefault": false
             }
         ],
         "createdAt": "2022-09-23T10:34:19.318Z",
@@ -26,6 +30,10 @@
             },
             {
                 "_id": "Recruit",
+                "isDefault": false
+            },
+            {
+                "_id": "CompanyJobs",
                 "isDefault": false
             }
         ],
@@ -406,7 +414,7 @@
             "remoteUrl": "git@github.com:MashtalerOlha/test_ubos.git",
             "repoName": "test_ubos"
         },
-        "lastDeployedAt": "2022-09-25T10:34:52.144Z",
+        "lastDeployedAt": "2022-09-25T10:39:18.660Z",
         "pages_info": [
             {
                 "_id": "632d8bab8068981100000003",
@@ -14271,6 +14279,102 @@
                     }
                 ],
                 "deletedAt": "2022-09-25T13:33:54.212Z"
+            },
+            {
+                "_id": "63302f53806898110000002d",
+                "applicationId": "company",
+                "slug": "CompanyJobs",
+                "unpublishedPage": {
+                    "name": "CompanyJobs",
+                    "layouts": [
+                        {
+                            "_id": "63302f53806898110000002e",
+                            "viewMode": false,
+                            "dsl": {
+                                "widgetName": "MainContainer",
+                                "backgroundColor": "none",
+                                "rightColumn": 1224,
+                                "snapColumns": 64,
+                                "widgetId": "0",
+                                "topRow": 0,
+                                "bottomRow": 600,
+                                "parentRowSpace": 1,
+                                "type": "CANVAS_WIDGET",
+                                "detachFromLayout": true,
+                                "minHeight": 610,
+                                "dynamicBindingPathList": [],
+                                "parentColumnSpace": 1,
+                                "leftColumn": 0,
+                                "children": [],
+                                "snapRows": 60,
+                                "containerStyle": "none",
+                                "canExtend": true,
+                                "version": 57
+                            },
+                            "widgetNames": [
+                                "MainContainer"
+                            ],
+                            "deleted": false,
+                            "policies": []
+                        }
+                    ],
+                    "isHidden": false
+                },
+                "createdAt": "2022-09-25T10:37:07.112Z",
+                "updatedAt": "2022-09-25T10:37:07.112Z",
+                "deleted": false,
+                "policies": [
+                    {
+                        "permission": "read:pages",
+                        "groups": [],
+                        "users": [
+                            null
+                        ]
+                    },
+                    {
+                        "permission": "manage:pages",
+                        "groups": [],
+                        "users": [
+                            null
+                        ]
+                    }
+                ],
+                "publishedPages": {
+                    "name": "CompanyJobs",
+                    "layouts": [
+                        {
+                            "_id": "63302f53806898110000002e",
+                            "viewMode": false,
+                            "dsl": {
+                                "widgetName": "MainContainer",
+                                "backgroundColor": "none",
+                                "rightColumn": 1224,
+                                "snapColumns": 64,
+                                "widgetId": "0",
+                                "topRow": 0,
+                                "bottomRow": 600,
+                                "parentRowSpace": 1,
+                                "type": "CANVAS_WIDGET",
+                                "detachFromLayout": true,
+                                "minHeight": 610,
+                                "dynamicBindingPathList": [],
+                                "parentColumnSpace": 1,
+                                "leftColumn": 0,
+                                "children": [],
+                                "snapRows": 60,
+                                "containerStyle": "none",
+                                "canExtend": true,
+                                "version": 57
+                            },
+                            "widgetNames": [
+                                "MainContainer"
+                            ],
+                            "deleted": false,
+                            "policies": []
+                        }
+                    ],
+                    "isHidden": false
+                }
             }
         ],
         "action_info": [

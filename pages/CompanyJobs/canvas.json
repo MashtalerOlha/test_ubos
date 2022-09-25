@@ -1,0 +1,96 @@
+{
+    "_id": "63302f53806898110000002d",
+    "applicationId": "company",
+    "slug": "CompanyJobs",
+    "unpublishedPage": {
+        "name": "CompanyJobs",
+        "layouts": [
+            {
+                "_id": "63302f53806898110000002e",
+                "viewMode": false,
+                "dsl": {
+                    "widgetName": "MainContainer",
+                    "backgroundColor": "none",
+                    "rightColumn": 1224,
+                    "snapColumns": 64,
+                    "widgetId": "0",
+                    "topRow": 0,
+                    "bottomRow": 600,
+                    "parentRowSpace": 1,
+                    "type": "CANVAS_WIDGET",
+                    "detachFromLayout": true,
+                    "minHeight": 610,
+                    "dynamicBindingPathList": [],
+                    "parentColumnSpace": 1,
+                    "leftColumn": 0,
+                    "children": [],
+                    "snapRows": 60,
+                    "containerStyle": "none",
+                    "canExtend": true,
+                    "version": 57
+                },
+                "widgetNames": [
+                    "MainContainer"
+                ],
+                "deleted": false,
+                "policies": []
+            }
+        ],
+        "isHidden": false
+    },
+    "createdAt": "2022-09-25T10:37:07.112Z",
+    "updatedAt": "2022-09-25T10:37:07.112Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:pages",
+            "groups": [],
+            "users": [
+                null
+            ]
+        },
+        {
+            "permission": "manage:pages",
+            "groups": [],
+            "users": [
+                null
+            ]
+        }
+    ],
+    "publishedPages": {
+        "name": "CompanyJobs",
+        "layouts": [
+            {
+                "_id": "63302f53806898110000002e",
+                "viewMode": false,
+                "dsl": {
+                    "widgetName": "MainContainer",
+                    "backgroundColor": "none",
+                    "rightColumn": 1224,
+                    "snapColumns": 64,
+                    "widgetId": "0",
+                    "topRow": 0,
+                    "bottomRow": 600,
+                    "parentRowSpace": 1,
+                    "type": "CANVAS_WIDGET",
+                    "detachFromLayout": true,
+                    "minHeight": 610,
+                    "dynamicBindingPathList": [],
+                    "parentColumnSpace": 1,
+                    "leftColumn": 0,
+                    "children": [],
+                    "snapRows": 60,
+                    "containerStyle": "none",
+                    "canExtend": true,
+                    "version": 57
+                },
+                "widgetNames": [
+                    "MainContainer"
+                ],
+                "deleted": false,
+                "policies": []
+            }
+        ],
+        "isHidden": false
+    }
+}
