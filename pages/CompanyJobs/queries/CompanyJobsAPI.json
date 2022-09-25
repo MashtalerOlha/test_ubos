@@ -1,0 +1,118 @@
+{
+    "_id": "63300f61806898110000001f",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "CompanyJobsAPI",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "CompanyJobs",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [
+                {
+                    "key": "_id",
+                    "value": "_id"
+                }
+            ],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companyJobs"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-25T08:20:49.864Z",
+    "updatedAt": "2022-09-25T08:40:54.803Z",
+    "deleted": true,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "CompanyJobsAPI",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "CompanyJobs",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [
+                {
+                    "key": "_id",
+                    "value": "_id"
+                }
+            ],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companyJobs"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "deletedAt": "2022-09-25T08:43:51.716Z"
+}

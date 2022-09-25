@@ -1,0 +1,59 @@
+{
+    "_id": "63302b478068981100000029",
+    "applicationId": "company",
+    "slug": "Page1",
+    "unpublishedPage": {
+        "name": "Page1",
+        "layouts": [
+            {
+                "_id": "63302b47806898110000002a",
+                "viewMode": false,
+                "dsl": {
+                    "widgetName": "MainContainer",
+                    "backgroundColor": "none",
+                    "rightColumn": 1224,
+                    "snapColumns": 64,
+                    "widgetId": "0",
+                    "topRow": 0,
+                    "bottomRow": 600,
+                    "parentRowSpace": 1,
+                    "type": "CANVAS_WIDGET",
+                    "detachFromLayout": true,
+                    "minHeight": 610,
+                    "dynamicBindingPathList": [],
+                    "parentColumnSpace": 1,
+                    "leftColumn": 0,
+                    "children": [],
+                    "snapRows": 60,
+                    "containerStyle": "none",
+                    "canExtend": true,
+                    "version": 57
+                },
+                "widgetNames": [
+                    "MainContainer"
+                ],
+                "deleted": false,
+                "policies": []
+            }
+        ]
+    },
+    "createdAt": "2022-09-25T10:19:51.849Z",
+    "updatedAt": "2022-09-25T10:19:51.849Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:pages",
+            "groups": [],
+            "users": [
+                null
+            ]
+        },
+        {
+            "permission": "manage:pages",
+            "groups": [],
+            "users": [
+                null
+            ]
+        }
+    ]
+}

@@ -1,0 +1,107 @@
+{
+    "_id": "632f3aca8068981100000015",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "APIGetJobs",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/getJobs"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-24T17:13:46.014Z",
+    "updatedAt": "2022-09-24T20:31:34.466Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "APIGetJobs",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/getJobs"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    }
+}

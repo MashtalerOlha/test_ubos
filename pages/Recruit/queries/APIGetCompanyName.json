@@ -1,0 +1,107 @@
+{
+    "_id": "632f19418068981100000013",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "APIGetCompanyName",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companiesName"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-24T14:50:41.432Z",
+    "updatedAt": "2022-09-24T20:15:41.896Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "APIGetCompanyName",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companiesName"
+        },
+        "dynamicBindingPathList": [],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    }
+}

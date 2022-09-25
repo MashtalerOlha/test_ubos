@@ -1,0 +1,131 @@
+{
+    "_id": "632f7eb78068981100000019",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "ApiDeleteJob",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "DELETE",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "application/json"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/deleteJob",
+            "body": "{\n\"_id\": \"{{TableJobs.selectedRow._id}}\"\n}"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "TableJobs.selectedRow._id"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-24T22:03:35.914Z",
+    "updatedAt": "2022-09-25T09:42:28.181Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "ApiDeleteJob",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "DELETE",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "application/json"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/deleteJob",
+            "body": "{\n\"_id\": \"{{TableJobs.selectedRow._id}}\"\n}"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "TableJobs.selectedRow._id"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "_id": "632f2ce78068981100000014",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "APICreateJob",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "POST",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/createJob",
+            "body": "{\n\t\"jobTitle\": \"{{inputJobTitle.text}}\",\n\t\"department\": \"{{inputDepartment.selectedOptionValue}}\",\n\t\"jobType\": \"{{inputJobType.selectedOptionValue}}\",\n\t\"skills\": \"{{inputSkills.text}}\",\n\t\"experience\": \"{{inputExperience.selectedOptionValue}}\",\n\t\"mminSalary\": \"{{inputMinSalary.text}}\",\n\t\"maxSalary\": \"{{inputMaxSalary.text}}\",\n\t\"currency\": \"{{inputCurrency.selectedOptionValue}}\",\n\t\"description\": \"{{inputDescription.text}}\",\n\t\"company\": \"{{inputCompany.selectedOptionValue}}\"\n}"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "inputJobTitle.text",
+            "inputDepartment.selectedOptionValue",
+            "inputJobType.selectedOptionValue",
+            "inputSkills.text",
+            "inputExperience.selectedOptionValue",
+            "inputMinSalary.text",
+            "inputMaxSalary.text",
+            "inputCurrency.selectedOptionValue",
+            "inputDescription.text",
+            "inputCompany.selectedOptionValue"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-24T16:14:31.012Z",
+    "updatedAt": "2022-09-24T19:37:15.577Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "APICreateJob",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Recruit",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "POST",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/createJob",
+            "body": "{\n\t\"jobTitle\": \"{{inputJobTitle.text}}\",\n\t\"department\": \"{{inputDepartment.selectedOptionValue}}\",\n\t\"jobType\": \"{{inputJobType.selectedOptionValue}}\",\n\t\"skills\": \"{{inputSkills.text}}\",\n\t\"experience\": \"{{inputExperience.selectedOptionValue}}\",\n\t\"mminSalary\": \"{{inputMinSalary.text}}\",\n\t\"maxSalary\": \"{{inputMaxSalary.text}}\",\n\t\"currency\": \"{{inputCurrency.selectedOptionValue}}\",\n\t\"description\": \"{{inputDescription.text}}\",\n\t\"company\": \"{{inputCompany.selectedOptionValue}}\"\n}"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "inputJobTitle.text",
+            "inputDepartment.selectedOptionValue",
+            "inputJobType.selectedOptionValue",
+            "inputSkills.text",
+            "inputExperience.selectedOptionValue",
+            "inputMinSalary.text",
+            "inputMaxSalary.text",
+            "inputCurrency.selectedOptionValue",
+            "inputDescription.text",
+            "inputCompany.selectedOptionValue"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "_id": "632dda798068981100000011",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "APICreateNewCompany",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Company",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "POST",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "body": "{\n\t\"companyName\": \"{{inputCompanyName.text}}\",\n\t\"street\": \"{{inputStreet.text}}\",\n\t\"city\": \"{{inputCity.selectedOptionValue}}\",\n\t\"coutnry\": \"{{inputCountry.selectedOptionValue}}\",\n\t\"phone\": \"{{InputPhone.text}}\",\n\t\"email\": \"{{inputEmail.text}}\",\n\t\"website\": \"{{InputWebsite.text}}\",\n\t\"companyRegistry\": \"{{InputCompanyRegistry.text}}\",\n\t\"currency\": \"{{inputCurrency.selectedOptionValue}}\",\n\t\"taxId\": \"{{inputTaxID.text}}\"\n}",
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companies"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "inputCompanyName.text",
+            "inputStreet.text",
+            "inputCity.selectedOptionValue",
+            "inputCountry.selectedOptionValue",
+            "InputPhone.text",
+            "inputEmail.text",
+            "InputWebsite.text",
+            "InputCompanyRegistry.text",
+            "inputCurrency.selectedOptionValue",
+            "inputTaxID.text"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-23T16:10:33.337Z",
+    "updatedAt": "2022-09-24T19:37:48.731Z",
+    "deleted": false,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "APICreateNewCompany",
+        "datasource": {
+            "invalids": [],
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": false,
+        "pageId": "Company",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "POST",
+            "headers": [
+                {
+                    "key": "content-type",
+                    "value": "application/json"
+                }
+            ],
+            "queryParameters": [],
+            "body": "{\n\t\"companyName\": \"{{inputCompanyName.text}}\",\n\t\"street\": \"{{inputStreet.text}}\",\n\t\"city\": \"{{inputCity.selectedOptionValue}}\",\n\t\"coutnry\": \"{{inputCountry.selectedOptionValue}}\",\n\t\"phone\": \"{{InputPhone.text}}\",\n\t\"email\": \"{{inputEmail.text}}\",\n\t\"website\": \"{{InputWebsite.text}}\",\n\t\"companyRegistry\": \"{{InputCompanyRegistry.text}}\",\n\t\"currency\": \"{{inputCurrency.selectedOptionValue}}\",\n\t\"taxId\": \"{{inputTaxID.text}}\"\n}",
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companies"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "body"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "inputCompanyName.text",
+            "inputStreet.text",
+            "inputCity.selectedOptionValue",
+            "inputCountry.selectedOptionValue",
+            "InputPhone.text",
+            "inputEmail.text",
+            "InputWebsite.text",
+            "InputCompanyRegistry.text",
+            "inputCurrency.selectedOptionValue",
+            "inputTaxID.text"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    }
+}

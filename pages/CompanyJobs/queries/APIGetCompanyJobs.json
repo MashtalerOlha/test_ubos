@@ -1,0 +1,130 @@
+{
+    "_id": "633024f08068981100000028",
+    "applicationId": "company",
+    "organizationId": "Org",
+    "pluginType": "API",
+    "pluginId": "API",
+    "unpublishedAction": {
+        "name": "APIGetCompanyJobs",
+        "datasource": {
+            "invalids": [],
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "CompanyJobs",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [
+                {
+                    "key": "_id",
+                    "value": "{{appsmith.URL.queryParams._id}}"
+                }
+            ],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companyJobs"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "queryParameters[0].value"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "appsmith.URL.queryParams._id"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "createdAt": "2022-09-25T09:52:48.321Z",
+    "updatedAt": "2022-09-25T10:03:36.274Z",
+    "deleted": true,
+    "policies": [
+        {
+            "permission": "read:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "manage:actions",
+            "groups": [],
+            "users": []
+        },
+        {
+            "permission": "execute:actions",
+            "groups": [],
+            "users": []
+        }
+    ],
+    "publishedAction": {
+        "name": "APIGetCompanyJobs",
+        "datasource": {
+            "invalids": [],
+            "isValid": true,
+            "name": "Company",
+            "new": true,
+            "datasourceConfiguration": {
+                "url": "https://company-632d89a9ba98a911000012f5.ubos.tech"
+            },
+            "organizationId": "Org",
+            "pluginId": "API",
+            "userPermissions": []
+        },
+        "executeOnLoad": true,
+        "pageId": "CompanyJobs",
+        "actionConfiguration": {
+            "timeoutInMillisecond": 10000,
+            "encodeParamsToggle": true,
+            "httpMethod": "GET",
+            "headers": [],
+            "queryParameters": [
+                {
+                    "key": "_id",
+                    "value": "{{appsmith.URL.queryParams._id}}"
+                }
+            ],
+            "bodyFormData": [],
+            "formData": {
+                "apiContentType": "none"
+            },
+            "pluginSpecifiedTemplates": [
+                {
+                    "value": true
+                }
+            ],
+            "path": "/companyJobs"
+        },
+        "dynamicBindingPathList": [
+            {
+                "key": "queryParameters[0].value"
+            }
+        ],
+        "isValid": true,
+        "invalids": [],
+        "jsonPathKeys": [
+            "appsmith.URL.queryParams._id"
+        ],
+        "userSetOnLoad": false,
+        "confirmBeforeExecute": false
+    },
+    "deletedAt": "2022-09-25T10:19:38.988Z"
+}
